@@ -1,0 +1,11 @@
+[build]
+  command = "npm run prod-build"
+  publish = "build"
+
+[template.environment]
+  REINDEX_URL = "change me for your reindex url"
+  NODE_ENV=production
+  OUTPUT_DIR=./build
+  PUBLIC_DIR=./build/client
+  ASSETS_DIR=./build/client/assets
+  ASSETS_MAP_FILE=assets.json
